@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope:wght@800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+  --very-darkblue:hsl(235, 21%, 11%);
+  --very-dark-DesaturatedBlue: hsl(235, 24%, 19%);
+  --light-grayishblue:hsl(234, 39%, 85%);
+  --light-grayishblue-hover: hsl(236, 33%, 92%);
+  --dark-grayishblue :hsl(234, 11%, 52%);
+  --very-dark-grayishblue: hsl(233, 14%, 35%);
+  --very-dark-grayishblue-2:hsl(237, 14%, 26%);
+  --bright-blue:hsl(220, 98%, 61%);
+}
+.bg-dark{
+  background-color: var(--very-dark-DesaturatedBlue);
+  background-image: url("./images/bg-desktop-dark.jpg");
+ 
+}
+.bg-light{
+  background-color: white;
+  background-image: url("./images/bg-desktop-light.jpg");
+}
+.App{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+@media only screen and(max-width:375px) {
+  .bg-light{
+    background-color: url("./images/bg-mobile-light.jpg");
+  }
+  .bg-dark{
+    background-image: url("./images/bg-mobile-dark.jpg");
+  }
+  .App{
+    background-size: contain;
+  }
+}
